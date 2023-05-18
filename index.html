@@ -20,8 +20,8 @@
       <div class="navbar">
         <nav>
           <ul>
-            <li><a href="http://www.youtube.com">Inicio</a></li>
-            <li><a href="http://www.youtube.com">Acerca nuestro</a></li>
+            <li><a href="#principal-area">Inicio</a></li>
+            <li><a href="#info-area">Sobre Nosotros</a></li>
             <li><a href="http://www.youtube.com">Tienda</a></li>
             <li><a href="http://www.youtube.com">Recetario</a></li>
             <li><a href="http://www.youtube.com">Contacto</a></li>
@@ -34,14 +34,15 @@
   <main class="container-main">
 
     <!-------ÁREA PRINCIPAL DE LA PÁGINA------->
-    <section class="principal-area">
+    <section id="principal-area">
+
       <div class="container-principal">
         <div class="container-tittle">
-          <h1>¡Bienvenidos a este dulce mundo!</h1>
+          <h1>¡Bienvenidos a este <span>Dulce Mundo!</span></h1>
           <p>
             En este sitio podrán deleitar tanto su vista como sus paladares en
             caso de que queden tentados con tanta dulzura, además de incluso
-            irse de la pagina sabiendo como realizar tales recetas
+            irse de la pagina sabiendo como realizar tales recetas.
           </p>
         </div>
         <div class="container-image">
@@ -53,11 +54,11 @@
     <!-------------------------------------------->
 
     <!-------ÁREA DE INFORMACIÓN SOBRE LA PÁGINA------->
-    <section class="info-area">
+    <section id="info-area">
 
       <div class="content-info">
 
-        <h2 class="tittle-info">Acerca de este emprendimiento!</h2>
+        <h2 class="tittle-info">Acerca de este <span>emprendimiento</span></h2>
         <p class="text-info">
           Esto empezó de casualidad, le pidieron a mi mamá que haga 80 golpes y como no sabia hacerlas las busco por
           internet y así comenzó, las primeras que hizo le salieron bien pero como no tenía tiempo por el trabajo, le
@@ -65,7 +66,8 @@
           negocio de hacer comida y salir a vender por la calle que era un poco más costoso y complejo, apuntó más a la
           venta con pedidos, ya sea a particulares o a locales. Él comenzó a ver que las 80 golpes no era algo tan común
           por la zona por lo que se interesó más por el negocio, solo algunas panaderías las hacían pero no era la 80
-          golpes ideal, por lo que le gustó la idea de hacer algo distinto que no estuviera haciendo todo el mundo. Se
+          golpes ideal, por lo que le gustó la idea de hacer algo distinto que no estuviera haciendo todo el mundo.
+          <br><br>Se
           realizó un pequeño estudio de marketing de los diversos negocios que podrían ser un potencial buen negocio
           para tener de cliente, que abrieran todos los días incluidos los domingos y que tengan buena clientela, de
           esta forma tratar que las tortas se vendan lo más rápido posible ya que no llevan ningún tipo de conservantes.
@@ -75,15 +77,41 @@
           ningún patrón no había horarios fijos de laburo, por lo que en su lugar se pusieron días específicos de
           trabajo que también se le fueron comunicados a los locales donde se dejaría el producto, para así tener un
           buen acuerdo. A las 80 golpes se anexaron a su vez otro tipo de tortas de tipo budín, que salían solo de
-          vainilla, con chispas de chocolate y marmolados.
-          Respecto a la vigencia del emprendimiento a día de hoy, hace como 11 o 12 años que esto comenzó y actualmente
-          sigue en pie, todo esto ayudó a la familia a seguir adelante, ayudó a seguir poniendo platos de comida sobre
+          vainilla, con chispas de chocolate y marmolados. <br> <br>
+          Respecto a la vigencia del emprendimiento a día de hoy, hace como 11 o 12 años que esto comenzó, actualmente
+          sigue en pie y más fuerte que nunca, todo esto ayudó a la familia a seguir adelante, ayudó a seguir poniendo
+          platos de comida sobre
           la mesa, en otra situación o circunstancias del país tal vez se podría haber llevado a cabo algo más grande y
           más ambicioso, pero teniendo en cuenta lo que pasa con los precios día a día, el emprendimiento este solo
           sirve para aportar un ingreso más al hogar, que de igual forma, sirve y ayuda mucho, sacando un promedio
           general de ventas, por semana se estaría vendiendo una cantidad de 70 (80 golpes) y entre 15 a 20 (tortas tipo
           budín).
         </p>
+      </div>
+    </section>
+
+    <section id="contact-area">
+      <h2>
+        Contactanos!
+      </h2>
+      <div class="form-area">
+        <div>
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" placeholder="Ingrese su nombre...">
+        </div>
+        <div>
+          <label for="lastname">Apellido:</label>
+          <input type="text" name="lastname" placeholder="Ingrese su apellido...">
+        </div>
+        <div>
+          <label for="name">Correo electrónico:</label>
+          <input type="text" name="name" placeholder="Ingrese su correo...">
+        </div>
+        <div>
+          <label for="coment">Nombre</label>
+          <textarea name="coment" id="coment" cols="30" rows="5"
+            placeholder="Dejanos tu opinión/comentario y/o pedido!"></textarea>
+        </div>
       </div>
     </section>
   </main>
