@@ -19,12 +19,6 @@ html {
   align-items: center;
 }
 
-/* body {
-  background-color: #fdfdfd; */
-/* background-image: linear-gradient(66deg, #f0659c 0%, #f3deed 100%); */
-/* background-repeat: no-repeat;
-} */
-
 /***** HEADER ******/
 
 .header {
@@ -153,7 +147,7 @@ html {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url(../images/wave-10.svg);
+  background-image: url(../images/wave-9.svg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background: rgb(238,158,225);
@@ -181,13 +175,95 @@ html {
 }
 
 .text-info {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(235, 233, 233)),
-    /* Agrega el color y la opacidad deseada */ url(../images/wave-10.svg)
-      center/cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(235, 233, 233)), url(../images/wave-10.svg) center/cover;
   padding: 2rem;
   display: flex;
   font-size: 1.28rem;
   font-weight: 600;
   text-align: justify;
   letter-spacing: 1px;
+}
+
+/********* AREA DE CONTACTO **********/
+
+#contact-area {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/wave-10.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-contact {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.content-contact h2 {
+  font-size: 3rem;
+}
+
+.form-area {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-area input,
+.form-area textarea {
+  border: none;
+  background: #FFFFFF;  
+  font-size: 1rem;
+}
+
+.form-area .input-area label {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.form-area .input-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5rem;
+  background: #FFFFFF;  
+  filter: drop-shadow(1.5px 1.5px 1.5px);
+  gap: .5rem;
+}
+
+.input-textarea {
+  width: 100%;
+  padding: 1rem 3rem 1rem 3rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3rem;
+  background: #FFFFFF;  
+  filter: drop-shadow(1.5px 1.5px 1.5px);
+}
+
+
+.form-area .input-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-area .input-button button{
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 5rem;
+  filter: drop-shadow(1px 1px 1px);
+  background: #eb8cc5;
+  cursor: pointer;
 }
