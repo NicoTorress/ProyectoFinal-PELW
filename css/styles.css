@@ -150,8 +150,6 @@ html {
   background-image: url(../images/wave-9.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background: rgb(238,158,225);
-  background: radial-gradient(circle, rgba(238,158,225,0.9094012605042017) 0%, rgba(255,255,255,1) 99%); */
 }
 
 #info-area .content-info {
