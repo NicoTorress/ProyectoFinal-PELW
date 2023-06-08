@@ -68,7 +68,7 @@ html {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #e928d9;
+  background-color: #ffffff;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
@@ -80,7 +80,7 @@ html {
 }
 
 .header .navbar nav ul li a:hover {
-  color: #e928d9;
+  color: #ffffff;
 }
 
 /****** AREA PRINCIPAL *******/
@@ -220,6 +220,7 @@ html {
   border: none;
   background: #FFFFFF;  
   font-size: 1rem;
+  outline: none;
 }
 
 .form-area .input-area label {
@@ -264,4 +265,83 @@ html {
   filter: drop-shadow(1px 1px 1px);
   background: #eb8cc5;
   cursor: pointer;
+}
+
+/********* FOOTER **********/
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #eb8cc5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 1px solid rgb(161, 158, 158);
+}
+
+.tittle-footer {
+  text-align: center;
+}
+
+.tittle-footer h2{
+  font-size: 2em;
+}
+
+.tittle-footer h2 .span-1{
+  color: #FFFFFF;
+}
+
+.tittle-footer h2 .span-2{
+  color: #e928d9;
+}
+
+.container-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-links p{
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
+.container-links ul{
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+.container-links ul li a{
+  text-decoration: none;
+}
+
+.container-links ul li a {
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 550;
+  display: inline-block;
+  position: relative;
+}
+
+.container-links ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.container-links ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.container-links ul li a:hover {
+  color: #ffffff;
 }
