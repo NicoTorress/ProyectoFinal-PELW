@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth ;
+}
+
+body {
+  background: rgb(240, 54, 165);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 54, 165, 0.43601190476190477) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(240, 54, 165, 0.43601190476190477) 100%
+  );
+}
+
+/********* STORE-AREA **********/
+
+.container-store {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.principal-tittle {
+  padding-top: 1.5rem;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.principal-tittle span {
+  color: #f036a5;
+  text-decoration: underline;
+}
+
+.container-principal{
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.product-card {
+  width: 20%;
+  display: flex;
+  background-color: rgb(236, 202, 231);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #f036a5;
+}
+
+.product-card img{
+  width: 65%;
+}
+
+.card-info {
+  width: 100%;
+  background-color: #eb55af;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 1.8rem;
+  padding-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.card-info .name-card {
+  font-size: 1.3rem;
+}
+
+/********* FOOTER **********/
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #eb8cc5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 1px solid rgb(161, 158, 158);
+}
+
+.tittle-footer {
+  text-align: center;
+}
+
+.tittle-footer h2 {
+  font-size: 2em;
+}
+
+.tittle-footer h2 .span-1 {
+  color: #ffffff;
+}
+
+.tittle-footer h2 .span-2 {
+  color: #e928d9;
+}
+
+.container-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-links p {
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
+.container-links ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+.container-links ul li a {
+  text-decoration: none;
+}
+
+.container-links ul li a {
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 550;
+  display: inline-block;
+  position: relative;
+}
+
+.container-links ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.container-links ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.container-links ul li a:hover {
+  color: #ffffff;
+}
