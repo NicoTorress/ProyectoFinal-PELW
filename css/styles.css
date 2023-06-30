@@ -19,6 +19,22 @@ html {
   align-items: center;
 }
 
+/***** ESTILOS PARA VALIDACIÓN ******/
+
+.formulario-incorrecto {
+  color: #bb2929;
+  border: 2px;
+}
+
+.formulario-correcto {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.mensaje-error-activado {
+  display: block;
+}
+
 /***** HEADER ******/
 
 .header {
@@ -30,7 +46,7 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #f37bc3;
-  border-bottom: 1px solid rgb(228, 227, 227);
+  border-bottom: 0.5px solid rgb(228, 227, 227);
 }
 
 .header .logo img {
@@ -87,7 +103,7 @@ html {
 
 #principal-area {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-image: url(../images/wave-9.svg);
@@ -144,7 +160,7 @@ html {
 
 #info-area {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-image: url(../images/wave-9.svg);
@@ -187,7 +203,7 @@ html {
 
 #contact-area {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-image: url(../images/wave-10.svg);
@@ -208,7 +224,7 @@ html {
   font-size: 3rem;
 }
 
-.form-area {
+#area-formulario {
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -216,20 +232,20 @@ html {
   gap: 1rem;
 }
 
-.form-area input,
-.form-area textarea {
+#area-formulario input,
+#area-formulario textarea {
   border: none;
   background: #ffffff;
   font-size: 1rem;
   outline: none;
 }
 
-.form-area .input-area label {
+#area-formulario .input-area label {
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.form-area .input-area {
+#area-formulario .input-area {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -250,13 +266,17 @@ html {
   filter: drop-shadow(1.5px 1.5px 1.5px);
 }
 
-.form-area .input-button {
+.input-textarea textarea {
+  width: 100%;
+}
+
+#area-formulario .input-button {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.form-area .input-button button {
+#area-formulario .input-button button {
   width: 80%;
   font-size: 1rem;
   font-weight: 500;
@@ -265,6 +285,10 @@ html {
   filter: drop-shadow(1px 1px 1px);
   background: #eb8cc5;
   cursor: pointer;
+}
+
+.mensaje-error {
+  display: none;
 }
 
 /********* FOOTER **********/

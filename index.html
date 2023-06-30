@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
           <ul>
             <li><a href="#principal-area">Inicio</a></li>
             <li><a href="#info-area">Sobre Nosotros</a></li>
-            <li><a href="http://www.youtube.com">Tienda</a></li>
+            <li><a href="./html/store.html">Tienda</a></li>
             <li><a href="http://www.youtube.com">Recetario</a></li>
             <li><a href="#contact-area">Contacto</a></li>
           </ul>
@@ -95,27 +95,35 @@
         <h2>
           Contáctanos!
         </h2>
-        <div class="form-area">
-          <div class="input-area">
+        <form id="area-formulario">
+          <div id="area-nombre" class="input-area">
             <label for="name">Nombre</label>
-            <input type="text" name="name" placeholder="Ingrese su nombre">
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <p class="mensaje-error">El campo no puede quedar vacío y solo debe contener letras</p>
           </div>
-          <div class="input-area">
+
+          <div id="area-apellido" class="input-area">
             <label for="lastname">Apellido</label>
-            <input type="text" name="lastname" placeholder="Ingrese su apellido">
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+            <p class="mensaje-error">El campo no puede quedar vacío y solo debe contener letras</p>
           </div>
-          <div class="input-area">
+
+          <div id="area-correo" class="input-area">
             <label for="name">Correo Electrónico</label>
-            <input type="text" name="name" placeholder="Ingrese su correo">
+            <input type="text" id="correo" name="correo" placeholder="Ingrese su correo">
+            <p class="mensaje-error">El campo no puede quedar vacío, ingrese un correo válido</p>
           </div>
+
           <div class="input-textarea">
-            <textarea name="coment" id="coment" cols="50" rows="10"
+            <textarea name="comentario" id="coment" cols="50" rows="10"
               placeholder="Dejanos tu opinión/comentario y/o pedido!"></textarea>
           </div>
+
           <div class="input-button">
             <button type="submit">Enviar</button>
           </div>
-        </div>
+
+        </form>
       </div>
     </section>
   </main>
@@ -125,19 +133,21 @@
     </div>
     <div class="container-links">
       <ul>
-        <li><a href="">Inicio</a></li>
+        <li><a href="#principal-area">Inicio</a></li>
         <hr color="black">
-        <li><a href="">Sobre Nosotros</a></li>
+        <li><a href="#info-area">Sobre Nosotros</a></li>
         <hr color="black">
         <li><a href="">Tienda</a></li>
         <hr color="black">
         <li><a href="">Recetario</a></li>
         <hr color="black">
-        <li><a href="">Contacto</a></li>
+        <li><a href="#contact-area">Contacto</a></li>
       </ul>
       <p>2023 &copy; Todos los Derechos Reservados</p>
     </div>
   </footer>
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>
