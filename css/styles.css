@@ -9,6 +9,8 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
+  list-style: none;
+  text-decoration: none;
 }
 
 .container-main {
@@ -289,6 +291,182 @@ html {
 
 .mensaje-error {
   display: none;
+}
+
+/********* AREA - STORE **********/
+
+#area-store {
+  background: rgb(240, 54, 165);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 54, 165, 0.43601190476190477) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(240, 54, 165, 0.43601190476190477) 100%
+  );
+}
+
+.container-store {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.principal-tittle {
+  padding-top: 1.5rem;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.principal-tittle span {
+  color: #f036a5;
+  text-decoration: underline;
+}
+
+.content-store {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.product-card {
+  width: 20%;
+  display: flex;
+  background-color: rgb(236, 202, 231);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #f036a5;
+  border-radius: 11px;
+}
+
+.product-card img {
+  width: 65%;
+}
+
+.card-info {
+  width: 100%;
+  background-color: #eb55af;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.card-info .name-card {
+  font-size: 1.3rem;
+}
+
+.card-info .button-card {
+  width: 60%;
+  color: black;
+  border: 1px solid rgb(190, 189, 189);
+  text-align: center;
+  padding: 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/********* AREA - RECIPES **********/
+
+#recipes-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.container-recipes {
+  margin: 0 40px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-recipes h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.container-recipes .card-recipes {
+  position: relative;
+  background: #e388db;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container-recipes .card-recipes input {
+  appearance: none;
+}
+
+.container-recipes .card-recipes label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container-recipes .card-recipes label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.05);
+  transition: transform 1s;
+}
+
+.container-recipes .card-recipes:hover label::after {
+  color: #333;
+}
+
+.container-recipes .card-recipes input:checked ~ label::after {
+  transform: rotate(135deg);
+  color: #fff;
+}
+
+.container-recipes .card-recipes label h2 {
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+}
+
+.container-recipes .card-recipes .content-card {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.container-recipes .card-recipes input:checked ~ .content-card {
+  max-height: 100vh;
+}
+
+.container-recipes .card-recipes .content-card p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
 }
 
 /********* FOOTER **********/
