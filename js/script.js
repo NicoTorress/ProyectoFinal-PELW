@@ -37,7 +37,7 @@ function validarCampo(expresion, input, campo) {
       .classList.add("formulario-correcto");
     document
       .querySelector(`#area-${campo} .mensaje-error`)
-      .classList.remove("mensaje-error-activado");
+      .classList.remove("error");
   } else {
     document
       .getElementById(`area-${campo}`)
@@ -47,7 +47,7 @@ function validarCampo(expresion, input, campo) {
       .classList.remove("formulario-correcto");
     document
       .querySelector(`#area-${campo} .mensaje-error`)
-      .classList.add("mensaje-error-activado");
+      .classList.add("error");
   }
 }
 
@@ -59,3 +59,4 @@ inputs.forEach((input) => {
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 });
+
