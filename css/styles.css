@@ -549,6 +549,23 @@ html {
   );
 }
 
+.back-button2 {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.back-button2 a {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.back-button2 a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
 .container-recipes {
   margin: 0 40px;
   width: 80%;
@@ -622,6 +639,7 @@ html {
   position: relative;
   padding: 10px 0;
   color: #333;
+  font-weight: 700;
   z-index: 10;
 }
 
