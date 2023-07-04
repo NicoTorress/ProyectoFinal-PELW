@@ -94,7 +94,4 @@ const showHTML = () => {
     rowProducts.append(containerProducts);
   });
 
-  // Actualizar la cantidad de productos en el carrito
-  const totalQuantify = Object.values(allProducts).reduce((total, product) => total + product.quantify, 0);
-  contadorProductos.textContent = totalQuantify;
 };

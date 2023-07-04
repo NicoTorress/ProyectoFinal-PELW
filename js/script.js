@@ -25,6 +25,7 @@ function validarFormulario(e) {
       validarCampo(expresiones.correo, e.target, "correo");
       break;
   }
+   
 }
 
 function validarCampo(expresion, input, campo) {
